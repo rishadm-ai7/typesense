@@ -1,0 +1,111 @@
+{
+  "facet_counts": [],
+  "found": 3,
+  "hits": [
+    {
+      "document": {
+        "authors": ["James Patterson"],
+        "average_rating": 4.08,
+        "id": "569",
+        "image_url": "https://images.gr-assets.com/books/1339277875m/13152.jpg",
+        "publication_year": 2005,
+        "ratings_count": 172302,
+        "title": "The Angel Experiment"
+      },
+      "highlight": {
+        "title": {
+          "matched_tokens": ["Experiment"],
+          "snippet": "The Angel <mark>Experiment</mark>"
+        }
+      },
+      "highlights": [
+        {
+          "field": "title",
+          "matched_tokens": ["Experiment"],
+          "snippet": "The Angel <mark>Experiment</mark>"
+        }
+      ],
+      "text_match": 578730054645710969,
+      "text_match_info": {
+        "best_field_score": "1108057784320",
+        "best_field_weight": 15,
+        "fields_matched": 1,
+        "score": "578730054645710969",
+        "tokens_matched": 1
+      }
+    },
+    {
+      "document": {
+        "authors": ["Mahatma Gandhi"],
+        "average_rating": 4.07,
+        "id": "2649",
+        "image_url": "https://images.gr-assets.com/books/1320560971m/112803.jpg",
+        "publication_year": 1940,
+        "ratings_count": 28177,
+        "title": "An Autobiography or The Story of My Experiments with Truth"
+      },
+      "highlight": {
+        "title": {
+          "matched_tokens": ["Experiments"],
+          "snippet": "An Autobiography or The Story of My <mark>Experiments</mark> with Truth"
+        }
+      },
+      "highlights": [
+        {
+          "field": "title",
+          "matched_tokens": ["Experiments"],
+          "snippet": "An Autobiography or The Story of My <mark>Experiments</mark> with Truth"
+        }
+      ],
+      "text_match": 578730054645710969,
+      "text_match_info": {
+        "best_field_score": "1108057784320",
+        "best_field_weight": 15,
+        "fields_matched": 1,
+        "score": "578730054645710969",
+        "tokens_matched": 1
+      }
+    },
+    {
+      "document": {
+        "authors": ["Gretchen Rubin", " K\u00e4the Mazur"],
+        "average_rating": 3.48,
+        "id": "9718",
+        "image_url": "https://images.gr-assets.com/books/1344014249m/13414599.jpg",
+        "publication_year": 2012,
+        "ratings_count": 6058,
+        "title": "Happier at Home: Kiss More, Jump More, Abandon a Project, Read Samuel Johnson, and My Other Experiments in the Practice of Everyday Life"
+      },
+      "highlight": {
+        "title": {
+          "matched_tokens": ["Experiments"],
+          "snippet": "Happier at Home: Kiss More, Jump More, Abandon a Project, Read Samuel Johnson, and My Other <mark>Experiments</mark> in the Practice of Everyday Life"
+        }
+      },
+      "highlights": [
+        {
+          "field": "title",
+          "matched_tokens": ["Experiments"],
+          "snippet": "Happier at Home: Kiss More, Jump More, Abandon a Project, Read Samuel Johnson, and My Other <mark>Experiments</mark> in the Practice of Everyday Life"
+        }
+      ],
+      "text_match": 578730054645710969,
+      "text_match_info": {
+        "best_field_score": "1108057784320",
+        "best_field_weight": 15,
+        "fields_matched": 1,
+        "score": "578730054645710969",
+        "tokens_matched": 1
+      }
+    }
+  ],
+  "out_of": 9979,
+  "page": 1,
+  "request_params": {
+    "collection_name": "books",
+    "per_page": 10,
+    "q": "experyment"
+  },
+  "search_cutoff": false,
+  "search_time_ms": 0
+}
