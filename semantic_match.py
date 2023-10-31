@@ -1,4 +1,3 @@
-import requests
 import json
 import typesense
 
@@ -12,7 +11,15 @@ client = typesense.Client({
   'connection_timeout_seconds': 2000000
 })
 
-client.collections['products'].delete()
+data = [
+    {"product_name": "Cell phone"},
+    {"product_name": "Laptop"},
+    {"product_name": "Desktop"},
+    {"product_name": "Printer"},
+    {"product_name": "Keyboard"},
+    {"product_name": "Monitor"},
+    {"product_name": "Mouse"}
+]
 
 product_schema = {
   'name': 'products',
@@ -33,16 +40,18 @@ product_schema = {
   ]
 }
 
-##create the schema
+#delete the collection if already exists
+client.collections['products'].delete()
+
+#create the schema
 client.collections.create(product_schema)
 
-##upload the dataset
-with open('products.json') as json_file:
-    documents = json_file.read()
-    client.collections['products'].documents.import_(documents.encode('utf-8'))
+#iterate over the data and push it
+for document in data:
+    response = client.collections['products'].documents.create(document)
 
 search_parameters = {
-          "q": "device used to click",
+          "q": "device used to type",
           "query_by": "embedding",
           "collection": "products",
           "prefix": "false",
@@ -55,3 +64,32 @@ result = client.collections['products'].documents.search(search_parameters)
 result=json.dumps(result)
 print(result)
 
+
+search_parameters = {
+          "q": "device used to watch",
+          "query_by": "embedding",
+          "collection": "products",
+          "prefix": "false",
+          "exclude_fields": "embedding",
+          "per_page": 1
+        }
+
+result = client.collections['products'].documents.search(search_parameters)
+
+result=json.dumps(result)
+print(result)
+
+
+search_parameters = {
+          "q": "device used to call",
+          "query_by": "embedding",
+          "collection": "products",
+          "prefix": "false",
+          "exclude_fields": "embedding",
+          "per_page": 1
+        }
+
+result = client.collections['products'].documents.search(search_parameters)
+
+result=json.dumps(result)
+print(result)
