@@ -27,15 +27,22 @@ books_schema = {
 }
 
 ##create the schema
-client.collections.create(books_schema)
+# client.collections.create(books_schema)
+
+##list the collections 
+collections = client.collections.retrieve()
+print(collections)
+
+##drop a collection
+# client.collections['books'].delete()
+
 
 ##upload the dataset
 with open('/tmp/books.jsonl') as jsonl_file:
   client.collections['books'].documents.import_(jsonl_file.read().encode('utf-8'))
 
-#search parameters
 search_parameters = {
-  'q'         : 'experyment',
+  'q'         : 'Prejudeece',
   'query_by'  : 'title',
   'sort_by'   : 'average_rating:desc'
 }
