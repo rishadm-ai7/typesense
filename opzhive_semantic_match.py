@@ -66,7 +66,7 @@ for document in data:
     response = client.collections['opzhive_data'].documents.create(document)
 
 search_parameters = {
-          "q": "note down bugs",
+          "q": "move database",
           "query_by": "embedding",
           "collection": "opzhive_data",
           "prefix": "false"
