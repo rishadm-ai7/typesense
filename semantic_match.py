@@ -51,37 +51,7 @@ for document in data:
     response = client.collections['products'].documents.create(document)
 
 search_parameters = {
-          "q": "device used to type",
-          "query_by": "embedding",
-          "collection": "products",
-          "prefix": "false",
-          "exclude_fields": "embedding",
-          "per_page": 1
-        }
-
-result = client.collections['products'].documents.search(search_parameters)
-
-result=json.dumps(result)
-print(result)
-
-
-search_parameters = {
-          "q": "device used to watch",
-          "query_by": "embedding",
-          "collection": "products",
-          "prefix": "false",
-          "exclude_fields": "embedding",
-          "per_page": 1
-        }
-
-result = client.collections['products'].documents.search(search_parameters)
-
-result=json.dumps(result)
-print(result)
-
-
-search_parameters = {
-          "q": "device used to call",
+          "q": "portable personal computer",
           "query_by": "embedding",
           "collection": "products",
           "prefix": "false",
