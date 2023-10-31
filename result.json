@@ -1,105 +1,82 @@
 [
   {
-    "created_at": 1698314483,
-    "default_sorting_field": "",
-    "enable_nested_fields": "False",
-    "fields": [
-      {
-        "facet": "False",
-        "index": "True",
-        "infix": "False",
-        "locale": "",
-        "name": "product_name",
-        "optional": "False",
-        "sort": "False",
-        "type": "string"
-      }
+    "global_pool_publishable": false,
+    "id": "16",
+    "initial_published": true,
+    "internal_publishable": true,
+    "is_deleted": false,
+    "is_locked": false,
+    "is_recurring": false,
+    "project_id": 15,
+    "reviewer_id": 2,
+    "task_category_id": 1,
+    "task_complexity": "Medium",
+    "task_description": "Optimize the performance of our mobile application to reduce load times and improve user experience.",
+    "task_due_date": "2024-02-25",
+    "task_effort": 12.0,
+    "task_icon_url": "https://example.com/icon17.png",
+    "task_id": 17,
+    "task_owner_user_id": 17,
+    "task_priority": "High",
+    "task_skills": [
+      "Mobile Development",
+      "Performance Optimization",
+      "App Testing"
     ],
-    "name": "products",
-    "num_documents": 1,
-    "symbols_to_index": [],
-    "token_separators": []
+    "task_tags": ["mobile app", "performance"],
+    "task_title": "Mobile App Performance Optimization",
+    "task_type": "Development"
   },
   {
-    "created_at": 1698314445,
-    "default_sorting_field": "",
-    "enable_nested_fields": "False",
-    "fields": [
-      {
-        "facet": "False",
-        "index": "True",
-        "infix": "False",
-        "locale": "",
-        "name": "product_name",
-        "optional": "False",
-        "sort": "False",
-        "type": "string"
-      }
+    "global_pool_publishable": true,
+    "id": "11",
+    "initial_published": true,
+    "internal_publishable": true,
+    "is_deleted": false,
+    "is_locked": false,
+    "is_recurring": false,
+    "project_id": 10,
+    "reviewer_id": 1,
+    "task_category_id": 7,
+    "task_complexity": "Low",
+    "task_description": "Develop a training program for the customer support team to improve service quality.",
+    "task_due_date": "2024-01-25",
+    "task_effort": 6.0,
+    "task_icon_url": "https://example.com/icon12.png",
+    "task_id": 12,
+    "task_owner_user_id": 12,
+    "task_priority": "High",
+    "task_skills": [
+      "Training and Development",
+      "Customer Service",
+      "Communication"
     ],
-    "name": "product",
-    "num_documents": 0,
-    "symbols_to_index": [],
-    "token_separators": []
+    "task_tags": ["customer support", "training"],
+    "task_title": "Customer Support Training",
+    "task_type": "Training"
   },
   {
-    "created_at": 1698311000,
-    "default_sorting_field": "ratings_count",
-    "enable_nested_fields": "False",
-    "fields": [
-      {
-        "facet": "False",
-        "index": "True",
-        "infix": "False",
-        "locale": "",
-        "name": "title",
-        "optional": "False",
-        "sort": "False",
-        "type": "string"
-      },
-      {
-        "facet": "True",
-        "index": "True",
-        "infix": "False",
-        "locale": "",
-        "name": "authors",
-        "optional": "False",
-        "sort": "False",
-        "type": "string[]"
-      },
-      {
-        "facet": "True",
-        "index": "True",
-        "infix": "False",
-        "locale": "",
-        "name": "publication_year",
-        "optional": "False",
-        "sort": "True",
-        "type": "int32"
-      },
-      {
-        "facet": "False",
-        "index": "True",
-        "infix": "False",
-        "locale": "",
-        "name": "ratings_count",
-        "optional": "False",
-        "sort": "True",
-        "type": "int32"
-      },
-      {
-        "facet": "False",
-        "index": "True",
-        "infix": "False",
-        "locale": "",
-        "name": "average_rating",
-        "optional": "False",
-        "sort": "True",
-        "type": "float"
-      }
-    ],
-    "name": "books",
-    "num_documents": 9979,
-    "symbols_to_index": [],
-    "token_separators": []
+    "global_pool_publishable": false,
+    "id": "5",
+    "initial_published": true,
+    "internal_publishable": false,
+    "is_deleted": false,
+    "is_locked": true,
+    "is_recurring": false,
+    "project_id": 4,
+    "reviewer_id": 3,
+    "task_category_id": 6,
+    "task_complexity": "High",
+    "task_description": "Upgrade the company's network infrastructure to improve performance and security.",
+    "task_due_date": "2023-12-20",
+    "task_effort": 20.0,
+    "task_icon_url": "https://example.com/icon6.png",
+    "task_id": 6,
+    "task_owner_user_id": 6,
+    "task_priority": "Critical",
+    "task_skills": ["Network Engineering", "Security", "Hardware"],
+    "task_tags": ["network", "security"],
+    "task_title": "Network Infrastructure Upgrade",
+    "task_type": "Infrastructure"
   }
 ]
