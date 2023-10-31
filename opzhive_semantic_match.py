@@ -56,7 +56,6 @@ task_schema = {
 #delete if needed
 for item in client.collections.retrieve():
     if item.get('name') == "opzhive_data":
-        print("Found myitem!")
         client.collections['opzhive_data'].delete()
 
 # Create the schema
@@ -67,8 +66,8 @@ for document in data:
     response = client.collections['opzhive_data'].documents.create(document)
 
 search_parameters = {
-          "q": "improve organisation",
-          "query_by": "task_description,task_title",
+          "q": "note down bugs",
+          "query_by": "embedding",
           "collection": "opzhive_data",
           "prefix": "false"
         }
