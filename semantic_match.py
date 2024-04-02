@@ -51,7 +51,7 @@ for document in data:
     response = client.collections['products'].documents.create(document)
 
 search_parameters = {
-          "q": "portable personal computer",
+          "q": "a device used to call",
           "query_by": "embedding",
           "collection": "products",
           "prefix": "false",
